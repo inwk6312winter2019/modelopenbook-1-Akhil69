@@ -3,7 +3,7 @@ def create_list():
     transit_access_in = []
     fw_management_access_in = []
     global_access = []
-    for i in myfile:
+    for i in myfile: #checking and saving the file
        if "transit_access_in" in i:
            i = i.strip()
            transit_access_in.append(i)
@@ -13,9 +13,9 @@ def create_list():
        if  "global_access" in i:
            i = i.strip()
            global_access.append(i)
-print("\ntransit_accesslist:" , transit_access_in)
-print("\fw management_list:" , fw_management_access_in)
-print("\global_access:" , global_access)
+    print("\ntransit_accesslist:" , transit_access_in)
+    print("\fw management_list:" , fw_management_access_in) 
+    print("\global_access:" , global_access)
 create_list()
 
 
